@@ -26,13 +26,22 @@ public class App
         Inscripcion inscri0 = new Inscripcion(alumno0, new Materia[]{disenioDeSistemas});
         System.out.println("inscri0: "+ inscri0.aprobada());
 
+        // le falta ingles1
         Inscripcion inscri01 = new Inscripcion(alumno1, new Materia[]{disenioDeSistemas});
         System.out.println("inscri01: "+ inscri01.aprobada());
 
+        // habilitado, no tiene correlativas, es materia de primer anio
+        Inscripcion inscri1 = new Inscripcion(alumno1, new Materia[]{sistemasYProcesosDeNegocio});
+        System.out.println("inscri1: "+ inscri1.aprobada());
+
+        // habilitado para cursar paradigmas
         Inscripcion inscri2 = new Inscripcion(alumno2, new Materia[]{paradigmas});
         System.out.println("inscri2: "+ inscri2.aprobada());
 
         Inscripcion inscri3 = new Inscripcion(alumno3, new Materia[]{analisisDeSistemas});
         System.out.println("inscri3: "+ inscri3.aprobada());
+
+        Inscripcion inscri4 = new Inscripcion(alumno4, new Materia[]{analisisDeSistemas});
+        System.out.println("inscri4: "+ inscri4.aprobada());
     }
 }
