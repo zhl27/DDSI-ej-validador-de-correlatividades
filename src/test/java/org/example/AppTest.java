@@ -42,7 +42,7 @@ public class AppTest
         Materia ingles1 = new Materia(new Materia[0]);
         Materia algebra = new Materia(new Materia[0]);
         Materia sistemasYProcesosDeNegocio = new Materia(new Materia[0]);
-        Materia analisisDeSistemas = new Materia(new Materia[]{algoritmos, paradigmas});
+        Materia analisisDeSistemas = new Materia(new Materia[]{algoritmos, sistemasYProcesosDeNegocio});
         Materia disenioDeSistemas = new Materia(new Materia[]{analisisDeSistemas, ingles1});
 
         Alumno alumno0 = new Alumno("L", "Z", 123456789, new Materia[]{algoritmos, discreta, paradigmas, ingles1, sistemasYProcesosDeNegocio, analisisDeSistemas});
